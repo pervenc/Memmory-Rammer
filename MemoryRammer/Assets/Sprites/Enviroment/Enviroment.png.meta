@@ -9,10 +9,10 @@ TextureImporter:
     21300008: Enviroment_4
     21300010: Enviroment_5
     21300012: Enviroment_6
-    21300014: Enviroment_7
+    21300014: Enviroment_9
     21300016: Enviroment_8
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -267,6 +267,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3a870ee37a8b3e14d82b7782434d0b48
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enviroment_9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9532bb32ce65ef244827b479608945ce
       vertices: []
       indices: 
       edges: []
