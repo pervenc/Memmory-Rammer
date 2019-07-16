@@ -33,7 +33,6 @@ public class ScoreControllerScript : MonoBehaviour
         startTime = timeToClompleteLevel;
         // startTime += timeToClompleteLevel;
 
-        time = 15;
     }
 
     // Update is called once per frame
