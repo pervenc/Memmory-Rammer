@@ -33,7 +33,7 @@ public class ScoreControllerScript : MonoBehaviour
         startTime = timeToClompleteLevel;
         // startTime += timeToClompleteLevel;
 
-
+        time = 15;
     }
 
     // Update is called once per frame
@@ -66,6 +66,7 @@ public class ScoreControllerScript : MonoBehaviour
         if (time < 10f)
         {
             timeText.color = new Color(1f, 0f, 0f, 1f);
+            gameController.GetComponent<GameControllerScript>().musicGame.pitch = 1.1f;
 
         }
     }

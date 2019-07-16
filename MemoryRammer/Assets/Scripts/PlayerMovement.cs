@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public AudioSource jumpSound;
 
 
-    [HideInInspector] public float runSpeed, movement2D;
+    [HideInInspector] public float runSpeed, movement2D, jumpSoundPitchValue;
     [HideInInspector] public Rigidbody2D rb;
 
     [HideInInspector] public bool grounded, speedTrigger, doubleJumped, jumpRequest, onEarth;
@@ -36,9 +39,10 @@ public class PlayerMovement : MonoBehaviour
 
 
 
+
     void Start()
     {
-        //  if (UseStartLevelPos)
+        if (UseStartLevelPos)
         {
             transform.position = new Vector3(0, -2, 0);
 
@@ -184,7 +188,7 @@ public class PlayerMovement : MonoBehaviour
 
 
             // Debug.Log( joystick.Horizontal);
-         //   Debug.Log(movement2D);
+            //   Debug.Log(movement2D);
 
 
 
@@ -271,13 +275,21 @@ public class PlayerMovement : MonoBehaviour
 
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-
+            jumpSoundPitchValue= 1.8f;
+            jumpSound.pitch = jumpSoundPitchValue;
+            jumpSound.Play();
+          //  jumpSound = GetComponent<AudioSource>();
+                        
 
         }
         else if (!grounded && !doubleJumped)
         {
 
             rb.velocity = new Vector2(rb.velocity.x, jumpForce * 0.75f);
+            jumpSound.pitch = (jumpSoundPitchValue*1.07f) + 0.17f;
+
+            jumpSound.Play();
+
             doubleJumped = true;
 
         }

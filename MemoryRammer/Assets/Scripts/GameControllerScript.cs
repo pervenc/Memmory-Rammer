@@ -113,7 +113,7 @@ public class GameControllerScript : MonoBehaviour
 
         }
 
-        if (gameIsOver)
+        if (gameIsOver && !youWon)
         {
 
             blackBGImageAnimator.SetTrigger("GameIsOver");

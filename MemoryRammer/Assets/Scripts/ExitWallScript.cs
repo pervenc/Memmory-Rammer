@@ -36,7 +36,7 @@ public class ExitWallScript : MonoBehaviour
 
             player.GetComponent<PlayerMovement>().playerAnimation.Play("Rammer_Dying");
             player.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-            player.GetComponent<PolygonCollider2D>().enabled = false;
+            player.GetComponent<BoxCollider2D>().enabled = false;
 
             for (int i = 0; i < 9; i++)
             {
