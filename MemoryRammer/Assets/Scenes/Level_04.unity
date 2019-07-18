@@ -54,7 +54,7 @@ LightmapSettings:
     m_EnableBakedLightmaps: 0
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
-    serializedVersion: 10
+    serializedVersion: 12
     m_Resolution: 2
     m_BakeResolution: 40
     m_AtlasSize: 1024
@@ -62,6 +62,7 @@ LightmapSettings:
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
     m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
     m_Padding: 2
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
@@ -76,10 +77,16 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
     m_PVRFilterTypeDirect: 0
     m_PVRFilterTypeIndirect: 0
     m_PVRFilterTypeAO: 0
-    m_PVRFilteringMode: 1
+    m_PVREnvironmentMIS: 0
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
@@ -87,7 +94,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -205,6 +213,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -216,6 +225,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -303,6 +313,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -314,6 +325,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -475,6 +487,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -486,6 +499,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -642,6 +656,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -653,6 +668,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -762,6 +778,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -773,6 +790,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -889,6 +907,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -900,6 +919,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1016,6 +1036,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1027,6 +1048,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1143,6 +1165,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1154,6 +1177,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1320,6 +1344,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1331,6 +1356,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1447,6 +1473,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1458,6 +1485,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1598,6 +1626,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1609,6 +1638,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1725,6 +1755,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1736,6 +1767,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1852,6 +1884,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1863,6 +1896,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1931,6 +1965,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1942,6 +1977,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2074,6 +2110,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -2085,6 +2122,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2201,6 +2239,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -2212,6 +2251,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2328,6 +2368,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -2339,6 +2380,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2455,6 +2497,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -2466,6 +2509,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2504,7 +2548,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &329980623
@@ -2552,6 +2596,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -2563,6 +2608,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2679,6 +2725,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -2690,6 +2737,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2758,6 +2806,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -2769,6 +2818,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2887,14 +2937,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97b34eb07a693cf4d8045b5d48054b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &378691646
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2909,6 +2951,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -2920,6 +2963,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3029,6 +3073,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -3040,6 +3085,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3096,6 +3142,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -3107,6 +3154,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3138,7 +3186,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422598126}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 177.5, y: -2.5, z: 0}
+  m_LocalPosition: {x: 176.5, y: -2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 551959257}
@@ -3231,6 +3279,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -3242,6 +3291,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3358,6 +3408,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -3369,6 +3420,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3485,6 +3537,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -3496,6 +3549,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3519,6 +3573,138 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &469003832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 469003834}
+  - component: {fileID: 469003833}
+  m_Layer: 5
+  m_Name: JumpSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &469003833
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469003832}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 99745f7235e58bc4c8eac7223bff3d5b, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.07
+  m_Pitch: 1.3
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 16
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!224 &469003834
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469003832}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_Children: []
+  m_Father: {fileID: 1218859520}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 100, y: 56}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &485781902
 GameObject:
   m_ObjectHideFlags: 0
@@ -3612,6 +3798,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -3623,6 +3810,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3739,6 +3927,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -3750,6 +3939,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3866,6 +4056,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -3877,6 +4068,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3993,6 +4185,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -4004,6 +4197,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4120,6 +4314,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -4131,6 +4326,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4208,9 +4404,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0.08627451, b: 0.011764706, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -4369,6 +4566,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -4380,6 +4578,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4502,6 +4701,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -4513,6 +4713,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4798,6 +4999,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -4809,6 +5011,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4882,6 +5085,7 @@ TilemapRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -4893,6 +5097,7 @@ TilemapRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4922,15 +5127,6 @@ Tilemap:
   m_GameObject: {fileID: 580416515}
   m_Enabled: 1
   m_Tiles:
-  - first: {x: 66, y: -3, z: 0}
-    second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
   - first: {x: 67, y: -3, z: 0}
     second:
       m_TileIndex: 1
@@ -5079,7 +5275,7 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 17
+  - m_RefCount: 16
     m_Data: {fileID: 11400000, guid: 55f69e1fe043ce74fbc18179d02e2743, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -5088,14 +5284,14 @@ Tilemap:
   m_TileSpriteArray:
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 17
+  - m_RefCount: 16
     m_Data: {fileID: 21300000, guid: 60b75a22b5922f747be46158008f7a39, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileMatrixArray:
-  - m_RefCount: 17
+  - m_RefCount: 16
     m_Data:
       e00: 1
       e01: 0
@@ -5114,7 +5310,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 17
+  - m_RefCount: 16
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5173,366 +5369,346 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 580416522}
     m_ColliderPaths:
-    - - X: 667812480
-        Y: -26250000
-      - X: 667500032
-        Y: -23437500
-      - X: 665312512
-        Y: -30000000
-      - X: 662812480
-        Y: -23437500
-      - X: 662499968
-        Y: -26250000
-      - X: 661562496
-        Y: -30000000
-      - X: 668750016
-        Y: -30000000
-    - - X: 677812480
-        Y: -26250000
-      - X: 677500032
-        Y: -23437500
-      - X: 675312512
-        Y: -30000000
-      - X: 672812480
-        Y: -23437500
-      - X: 672499968
-        Y: -26250000
-      - X: 671562496
-        Y: -30000000
-      - X: 678750016
-        Y: -30000000
-    - - X: 687812480
-        Y: -26250000
-      - X: 687500032
-        Y: -23437500
-      - X: 685312512
-        Y: -30000000
-      - X: 682812480
-        Y: -23437500
-      - X: 682499968
-        Y: -26250000
-      - X: 681562496
-        Y: -30000000
-      - X: 688750016
-        Y: -30000000
-    - - X: 697812480
-        Y: -26250000
-      - X: 697500032
-        Y: -23437500
-      - X: 695312512
-        Y: -30000000
-      - X: 692812480
-        Y: -23437500
-      - X: 692499968
-        Y: -26250000
-      - X: 691562496
-        Y: -30000000
-      - X: 698750016
-        Y: -30000000
-    - - X: 707812480
-        Y: -26250000
-      - X: 707500032
-        Y: -23437500
-      - X: 705312512
-        Y: -30000000
-      - X: 702812480
-        Y: -23437500
-      - X: 702499968
-        Y: -26250000
-      - X: 701562496
-        Y: -30000000
-      - X: 708750016
-        Y: -30000000
-    - - X: 717812480
-        Y: -26250000
-      - X: 717500032
-        Y: -23437500
-      - X: 715312512
-        Y: -30000000
-      - X: 712812480
-        Y: -23437500
-      - X: 712499968
-        Y: -26250000
-      - X: 711562496
-        Y: -30000000
-      - X: 718750016
-        Y: -30000000
-    - - X: 727812480
-        Y: -26250000
-      - X: 727500032
-        Y: -23437500
-      - X: 725312512
-        Y: -30000000
-      - X: 722812480
-        Y: -23437500
-      - X: 722499968
-        Y: -26250000
-      - X: 721562496
-        Y: -30000000
-      - X: 728750016
-        Y: -30000000
-    - - X: 737812480
-        Y: -26250000
-      - X: 737500032
-        Y: -23437500
-      - X: 735312512
-        Y: -30000000
-      - X: 732812480
-        Y: -23437500
-      - X: 732499968
-        Y: -26250000
-      - X: 731562496
-        Y: -30000000
-      - X: 738750016
-        Y: -30000000
-    - - X: 747812480
-        Y: -26250000
-      - X: 747500032
-        Y: -23437500
-      - X: 745312512
-        Y: -30000000
-      - X: 742812480
-        Y: -23437500
-      - X: 742499968
-        Y: -26250000
-      - X: 741562496
-        Y: -30000000
-      - X: 748750016
-        Y: -30000000
-    - - X: 757812480
-        Y: -26250000
-      - X: 757500032
-        Y: -23437500
-      - X: 755312512
-        Y: -30000000
-      - X: 752812480
-        Y: -23437500
-      - X: 752499968
-        Y: -26250000
-      - X: 751562496
-        Y: -30000000
-      - X: 758750016
-        Y: -30000000
-    - - X: 767812480
-        Y: -26250000
-      - X: 767500032
-        Y: -23437500
-      - X: 765312512
-        Y: -30000000
-      - X: 762812480
-        Y: -23437500
-      - X: 762499968
-        Y: -26250000
-      - X: 761562496
-        Y: -30000000
-      - X: 768750016
-        Y: -30000000
-    - - X: 777812480
-        Y: -26250000
-      - X: 777500032
-        Y: -23437500
-      - X: 775312512
-        Y: -30000000
-      - X: 772812480
-        Y: -23437500
-      - X: 772499968
-        Y: -26250000
-      - X: 771562496
-        Y: -30000000
-      - X: 778750016
-        Y: -30000000
-    - - X: 787812480
-        Y: -26250000
-      - X: 787500032
-        Y: -23437500
-      - X: 785312512
-        Y: -30000000
-      - X: 782812480
-        Y: -23437500
-      - X: 782499968
-        Y: -26250000
-      - X: 781562496
-        Y: -30000000
-      - X: 788750016
-        Y: -30000000
-    - - X: 797812480
-        Y: -26250000
-      - X: 797500032
-        Y: -23437500
-      - X: 795312512
-        Y: -30000000
-      - X: 792812480
-        Y: -23437500
-      - X: 792499968
-        Y: -26250000
-      - X: 791562496
-        Y: -30000000
-      - X: 798750016
-        Y: -30000000
-    - - X: 807812480
-        Y: -26250000
-      - X: 807500032
-        Y: -23437500
-      - X: 805312512
-        Y: -30000000
-      - X: 802812480
-        Y: -23437500
-      - X: 802499968
-        Y: -26250000
-      - X: 801562496
-        Y: -30000000
-      - X: 808750016
-        Y: -30000000
-    - - X: 817812480
-        Y: -26250000
-      - X: 817500032
-        Y: -23437500
-      - X: 815312512
-        Y: -30000000
-      - X: 812812480
-        Y: -23437500
-      - X: 812499968
-        Y: -26250000
-      - X: 811562496
-        Y: -30000000
-      - X: 818750016
-        Y: -30000000
-    - - X: 827812480
-        Y: -26250000
-      - X: 827500032
-        Y: -23437500
-      - X: 825312512
-        Y: -30000000
-      - X: 822812480
-        Y: -23437500
-      - X: 822499968
-        Y: -26250000
-      - X: 821562496
-        Y: -30000000
-      - X: 828750016
-        Y: -30000000
+    - - X: 671562506
+        Y: -29999962
+      - X: 678750005
+        Y: -29999962
+      - X: 677812480
+        Y: -26249996
+      - X: 677499972
+        Y: -23437678
+      - X: 675312485
+        Y: -29999927
+      - X: 672812462
+        Y: -23437664
+      - X: 672499967
+        Y: -26250003
+    - - X: 681562506
+        Y: -29999962
+      - X: 688750005
+        Y: -29999962
+      - X: 687812480
+        Y: -26249996
+      - X: 687499972
+        Y: -23437678
+      - X: 685312485
+        Y: -29999927
+      - X: 682812462
+        Y: -23437664
+      - X: 682499967
+        Y: -26250003
+    - - X: 811562506
+        Y: -29999962
+      - X: 818750005
+        Y: -29999962
+      - X: 817812480
+        Y: -26249996
+      - X: 817499972
+        Y: -23437678
+      - X: 815312485
+        Y: -29999927
+      - X: 812812462
+        Y: -23437664
+      - X: 812499967
+        Y: -26250003
+    - - X: 691562506
+        Y: -29999962
+      - X: 698750005
+        Y: -29999962
+      - X: 697812480
+        Y: -26249996
+      - X: 697499972
+        Y: -23437678
+      - X: 695312485
+        Y: -29999927
+      - X: 692812462
+        Y: -23437664
+      - X: 692499967
+        Y: -26250003
+    - - X: 701562506
+        Y: -29999962
+      - X: 708750005
+        Y: -29999962
+      - X: 707812480
+        Y: -26249996
+      - X: 707499972
+        Y: -23437678
+      - X: 705312485
+        Y: -29999927
+      - X: 702812462
+        Y: -23437664
+      - X: 702499967
+        Y: -26250003
+    - - X: 761562506
+        Y: -29999962
+      - X: 768750005
+        Y: -29999962
+      - X: 767812480
+        Y: -26249996
+      - X: 767499972
+        Y: -23437678
+      - X: 765312485
+        Y: -29999927
+      - X: 762812462
+        Y: -23437664
+      - X: 762499967
+        Y: -26250003
+    - - X: 711562506
+        Y: -29999962
+      - X: 718750005
+        Y: -29999962
+      - X: 717812480
+        Y: -26249996
+      - X: 717499972
+        Y: -23437678
+      - X: 715312485
+        Y: -29999927
+      - X: 712812462
+        Y: -23437664
+      - X: 712499967
+        Y: -26250003
+    - - X: 821562506
+        Y: -29999962
+      - X: 828750005
+        Y: -29999962
+      - X: 827812480
+        Y: -26249996
+      - X: 827499972
+        Y: -23437678
+      - X: 825312485
+        Y: -29999927
+      - X: 822812462
+        Y: -23437664
+      - X: 822499967
+        Y: -26250003
+    - - X: 721562506
+        Y: -29999962
+      - X: 728750005
+        Y: -29999962
+      - X: 727812480
+        Y: -26249996
+      - X: 727499972
+        Y: -23437678
+      - X: 725312485
+        Y: -29999927
+      - X: 722812462
+        Y: -23437664
+      - X: 722499967
+        Y: -26250003
+    - - X: 731562506
+        Y: -29999962
+      - X: 738750005
+        Y: -29999962
+      - X: 737812480
+        Y: -26249996
+      - X: 737499972
+        Y: -23437678
+      - X: 735312485
+        Y: -29999927
+      - X: 732812462
+        Y: -23437664
+      - X: 732499967
+        Y: -26250003
+    - - X: 781562506
+        Y: -29999962
+      - X: 788750005
+        Y: -29999962
+      - X: 787812480
+        Y: -26249996
+      - X: 787499972
+        Y: -23437678
+      - X: 785312485
+        Y: -29999927
+      - X: 782812462
+        Y: -23437664
+      - X: 782499967
+        Y: -26250003
+    - - X: 741562506
+        Y: -29999962
+      - X: 748750005
+        Y: -29999962
+      - X: 747812480
+        Y: -26249996
+      - X: 747499972
+        Y: -23437678
+      - X: 745312485
+        Y: -29999927
+      - X: 742812462
+        Y: -23437664
+      - X: 742499967
+        Y: -26250003
+    - - X: 801562506
+        Y: -29999962
+      - X: 808750005
+        Y: -29999962
+      - X: 807812480
+        Y: -26249996
+      - X: 807499972
+        Y: -23437678
+      - X: 805312485
+        Y: -29999927
+      - X: 802812462
+        Y: -23437664
+      - X: 802499967
+        Y: -26250003
+    - - X: 791562506
+        Y: -29999962
+      - X: 798750005
+        Y: -29999962
+      - X: 797812480
+        Y: -26249996
+      - X: 797499972
+        Y: -23437678
+      - X: 795312485
+        Y: -29999927
+      - X: 792812462
+        Y: -23437664
+      - X: 792499967
+        Y: -26250003
+    - - X: 751562506
+        Y: -29999962
+      - X: 758750005
+        Y: -29999962
+      - X: 757812480
+        Y: -26249996
+      - X: 757499972
+        Y: -23437678
+      - X: 755312485
+        Y: -29999927
+      - X: 752812462
+        Y: -23437664
+      - X: 752499967
+        Y: -26250003
+    - - X: 771562506
+        Y: -29999962
+      - X: 778750005
+        Y: -29999962
+      - X: 777812480
+        Y: -26249996
+      - X: 777499972
+        Y: -23437678
+      - X: 775312485
+        Y: -29999927
+      - X: 772812462
+        Y: -23437664
+      - X: 772499967
+        Y: -26250003
   m_CompositePaths:
     m_Paths:
-    - - {x: 66.78125, y: -2.625}
-      - {x: 66.75001, y: -2.34375}
-      - {x: 66.53125, y: -3}
-      - {x: 66.28125, y: -2.34375}
-      - {x: 66.25, y: -2.625}
-      - {x: 66.15625, y: -3}
-      - {x: 66.875, y: -3}
-    - - {x: 67.78125, y: -2.625}
-      - {x: 67.75001, y: -2.34375}
-      - {x: 67.53125, y: -3}
-      - {x: 67.28125, y: -2.34375}
-      - {x: 67.25, y: -2.625}
-      - {x: 67.15625, y: -3}
-      - {x: 67.875, y: -3}
-    - - {x: 68.78125, y: -2.625}
-      - {x: 68.75001, y: -2.34375}
-      - {x: 68.53125, y: -3}
-      - {x: 68.28125, y: -2.34375}
-      - {x: 68.25, y: -2.625}
-      - {x: 68.15625, y: -3}
-      - {x: 68.875, y: -3}
-    - - {x: 69.78125, y: -2.625}
-      - {x: 69.75001, y: -2.34375}
-      - {x: 69.53125, y: -3}
-      - {x: 69.28125, y: -2.34375}
-      - {x: 69.25, y: -2.625}
-      - {x: 69.15625, y: -3}
-      - {x: 69.875, y: -3}
-    - - {x: 70.78125, y: -2.625}
-      - {x: 70.75001, y: -2.34375}
-      - {x: 70.53125, y: -3}
-      - {x: 70.28125, y: -2.34375}
-      - {x: 70.25, y: -2.625}
-      - {x: 70.15625, y: -3}
-      - {x: 70.875, y: -3}
-    - - {x: 71.78125, y: -2.625}
-      - {x: 71.75001, y: -2.34375}
-      - {x: 71.53125, y: -3}
-      - {x: 71.28125, y: -2.34375}
-      - {x: 71.25, y: -2.625}
-      - {x: 71.15625, y: -3}
-      - {x: 71.875, y: -3}
-    - - {x: 72.78125, y: -2.625}
-      - {x: 72.75001, y: -2.34375}
-      - {x: 72.53125, y: -3}
-      - {x: 72.28125, y: -2.34375}
-      - {x: 72.25, y: -2.625}
-      - {x: 72.15625, y: -3}
-      - {x: 72.875, y: -3}
-    - - {x: 73.78125, y: -2.625}
-      - {x: 73.75001, y: -2.34375}
-      - {x: 73.53125, y: -3}
-      - {x: 73.28125, y: -2.34375}
-      - {x: 73.25, y: -2.625}
-      - {x: 73.15625, y: -3}
-      - {x: 73.875, y: -3}
-    - - {x: 74.78125, y: -2.625}
-      - {x: 74.75001, y: -2.34375}
-      - {x: 74.53125, y: -3}
-      - {x: 74.28125, y: -2.34375}
-      - {x: 74.25, y: -2.625}
-      - {x: 74.15625, y: -3}
-      - {x: 74.875, y: -3}
-    - - {x: 75.78125, y: -2.625}
-      - {x: 75.75001, y: -2.34375}
-      - {x: 75.53125, y: -3}
-      - {x: 75.28125, y: -2.34375}
-      - {x: 75.25, y: -2.625}
-      - {x: 75.15625, y: -3}
-      - {x: 75.875, y: -3}
-    - - {x: 76.78125, y: -2.625}
-      - {x: 76.75001, y: -2.34375}
-      - {x: 76.53125, y: -3}
-      - {x: 76.28125, y: -2.34375}
-      - {x: 76.25, y: -2.625}
-      - {x: 76.15625, y: -3}
-      - {x: 76.875, y: -3}
-    - - {x: 77.78125, y: -2.625}
-      - {x: 77.75001, y: -2.34375}
-      - {x: 77.53125, y: -3}
-      - {x: 77.28125, y: -2.34375}
-      - {x: 77.25, y: -2.625}
-      - {x: 77.15625, y: -3}
-      - {x: 77.875, y: -3}
-    - - {x: 78.78125, y: -2.625}
-      - {x: 78.75001, y: -2.34375}
-      - {x: 78.53125, y: -3}
-      - {x: 78.28125, y: -2.34375}
-      - {x: 78.25, y: -2.625}
-      - {x: 78.15625, y: -3}
-      - {x: 78.875, y: -3}
-    - - {x: 79.78125, y: -2.625}
-      - {x: 79.75001, y: -2.34375}
-      - {x: 79.53125, y: -3}
-      - {x: 79.28125, y: -2.34375}
-      - {x: 79.25, y: -2.625}
-      - {x: 79.15625, y: -3}
-      - {x: 79.875, y: -3}
-    - - {x: 80.78125, y: -2.625}
-      - {x: 80.75001, y: -2.34375}
-      - {x: 80.53125, y: -3}
-      - {x: 80.28125, y: -2.34375}
-      - {x: 80.25, y: -2.625}
-      - {x: 80.15625, y: -3}
-      - {x: 80.875, y: -3}
-    - - {x: 81.78125, y: -2.625}
-      - {x: 81.75001, y: -2.34375}
-      - {x: 81.53125, y: -3}
-      - {x: 81.28125, y: -2.34375}
-      - {x: 81.25, y: -2.625}
-      - {x: 81.15625, y: -3}
-      - {x: 81.875, y: -3}
-    - - {x: 82.78125, y: -2.625}
-      - {x: 82.75001, y: -2.34375}
-      - {x: 82.53125, y: -3}
-      - {x: 82.28125, y: -2.34375}
-      - {x: 82.25, y: -2.625}
-      - {x: 82.15625, y: -3}
-      - {x: 82.875, y: -3}
+    - - {x: 75.87499, y: -2.9999962}
+      - {x: 75.78125, y: -2.6249993}
+      - {x: 75.74999, y: -2.3437855}
+      - {x: 75.53124, y: -2.9999828}
+      - {x: 75.28124, y: -2.343783}
+      - {x: 75.25, y: -2.6250007}
+      - {x: 75.15626, y: -2.9999962}
+    - - {x: 73.87499, y: -2.9999962}
+      - {x: 73.78125, y: -2.6249993}
+      - {x: 73.74999, y: -2.3437855}
+      - {x: 73.53124, y: -2.9999828}
+      - {x: 73.28124, y: -2.343783}
+      - {x: 73.25, y: -2.6250007}
+      - {x: 73.15626, y: -2.9999962}
+    - - {x: 80.87499, y: -2.9999962}
+      - {x: 80.78125, y: -2.6249993}
+      - {x: 80.74999, y: -2.3437855}
+      - {x: 80.53124, y: -2.9999828}
+      - {x: 80.28124, y: -2.343783}
+      - {x: 80.25, y: -2.6250007}
+      - {x: 80.15626, y: -2.9999962}
+    - - {x: 82.87499, y: -2.9999962}
+      - {x: 82.78125, y: -2.6249993}
+      - {x: 82.74999, y: -2.3437855}
+      - {x: 82.53124, y: -2.9999828}
+      - {x: 82.28124, y: -2.343783}
+      - {x: 82.25, y: -2.6250007}
+      - {x: 82.15626, y: -2.9999962}
+    - - {x: 67.87499, y: -2.9999962}
+      - {x: 67.78125, y: -2.6249993}
+      - {x: 67.74999, y: -2.3437855}
+      - {x: 67.53124, y: -2.9999828}
+      - {x: 67.28124, y: -2.343783}
+      - {x: 67.25, y: -2.6250007}
+      - {x: 67.15626, y: -2.9999962}
+    - - {x: 69.87499, y: -2.9999962}
+      - {x: 69.78125, y: -2.6249993}
+      - {x: 69.74999, y: -2.3437855}
+      - {x: 69.53124, y: -2.9999828}
+      - {x: 69.28124, y: -2.343783}
+      - {x: 69.25, y: -2.6250007}
+      - {x: 69.15626, y: -2.9999962}
+    - - {x: 79.87499, y: -2.9999962}
+      - {x: 79.78125, y: -2.6249993}
+      - {x: 79.74999, y: -2.3437855}
+      - {x: 79.53124, y: -2.9999828}
+      - {x: 79.28124, y: -2.343783}
+      - {x: 79.25, y: -2.6250007}
+      - {x: 79.15626, y: -2.9999962}
+    - - {x: 76.87499, y: -2.9999962}
+      - {x: 76.78125, y: -2.6249993}
+      - {x: 76.74999, y: -2.3437855}
+      - {x: 76.53124, y: -2.9999828}
+      - {x: 76.28124, y: -2.343783}
+      - {x: 76.25, y: -2.6250007}
+      - {x: 76.15626, y: -2.9999962}
+    - - {x: 72.87499, y: -2.9999962}
+      - {x: 72.78125, y: -2.6249993}
+      - {x: 72.74999, y: -2.3437855}
+      - {x: 72.53124, y: -2.9999828}
+      - {x: 72.28124, y: -2.343783}
+      - {x: 72.25, y: -2.6250007}
+      - {x: 72.15626, y: -2.9999962}
+    - - {x: 70.87499, y: -2.9999962}
+      - {x: 70.78125, y: -2.6249993}
+      - {x: 70.74999, y: -2.3437855}
+      - {x: 70.53124, y: -2.9999828}
+      - {x: 70.28124, y: -2.343783}
+      - {x: 70.25, y: -2.6250007}
+      - {x: 70.15626, y: -2.9999962}
+    - - {x: 81.87499, y: -2.9999962}
+      - {x: 81.78125, y: -2.6249993}
+      - {x: 81.74999, y: -2.3437855}
+      - {x: 81.53124, y: -2.9999828}
+      - {x: 81.28124, y: -2.343783}
+      - {x: 81.25, y: -2.6250007}
+      - {x: 81.15626, y: -2.9999962}
+    - - {x: 68.87499, y: -2.9999962}
+      - {x: 68.78125, y: -2.6249993}
+      - {x: 68.74999, y: -2.3437855}
+      - {x: 68.53124, y: -2.9999828}
+      - {x: 68.28124, y: -2.343783}
+      - {x: 68.25, y: -2.6250007}
+      - {x: 68.15626, y: -2.9999962}
+    - - {x: 77.87499, y: -2.9999962}
+      - {x: 77.78125, y: -2.6249993}
+      - {x: 77.74999, y: -2.3437855}
+      - {x: 77.53124, y: -2.9999828}
+      - {x: 77.28124, y: -2.343783}
+      - {x: 77.25, y: -2.6250007}
+      - {x: 77.15626, y: -2.9999962}
+    - - {x: 74.87499, y: -2.9999962}
+      - {x: 74.78125, y: -2.6249993}
+      - {x: 74.74999, y: -2.3437855}
+      - {x: 74.53124, y: -2.9999828}
+      - {x: 74.28124, y: -2.343783}
+      - {x: 74.25, y: -2.6250007}
+      - {x: 74.15626, y: -2.9999962}
+    - - {x: 71.87499, y: -2.9999962}
+      - {x: 71.78125, y: -2.6249993}
+      - {x: 71.74999, y: -2.3437855}
+      - {x: 71.53124, y: -2.9999828}
+      - {x: 71.28124, y: -2.343783}
+      - {x: 71.25, y: -2.6250007}
+      - {x: 71.15626, y: -2.9999962}
+    - - {x: 78.87499, y: -2.9999962}
+      - {x: 78.78125, y: -2.6249993}
+      - {x: 78.74999, y: -2.3437855}
+      - {x: 78.53124, y: -2.9999828}
+      - {x: 78.28124, y: -2.343783}
+      - {x: 78.25, y: -2.6250007}
+      - {x: 78.15626, y: -2.9999962}
   m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.000005
 --- !u!50 &580416521
 Rigidbody2D:
   serializedVersion: 4
@@ -5568,6 +5744,8 @@ TilemapCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &581372865
 GameObject:
   m_ObjectHideFlags: 0
@@ -5613,6 +5791,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -5624,6 +5803,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -5740,6 +5920,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -5751,6 +5932,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6005,6 +6187,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -6016,6 +6199,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6132,6 +6316,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -6143,6 +6328,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6181,7 +6367,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &731870919
@@ -6403,6 +6589,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -6414,6 +6601,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6530,6 +6718,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -6541,6 +6730,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6657,6 +6847,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -6668,6 +6859,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6784,6 +6976,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -6795,6 +6988,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6911,6 +7105,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -6922,6 +7117,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -7044,6 +7240,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -7055,6 +7252,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -7211,6 +7409,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -7222,6 +7421,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -7309,6 +7509,11 @@ PrefabInstance:
       propertyPath: UseStartLevelPos
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114881160853583418, guid: 632c3f2284744bd46af96ae2577d777e,
+        type: 3}
+      propertyPath: jumpSound
+      value: 
+      objectReference: {fileID: 469003833}
     - target: {fileID: 114429050819745106, guid: 632c3f2284744bd46af96ae2577d777e,
         type: 3}
       propertyPath: gameController
@@ -7409,6 +7614,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -7420,6 +7626,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -7536,6 +7743,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -7547,6 +7755,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -7719,6 +7928,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -7730,6 +7940,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -7846,6 +8057,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -7857,6 +8069,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -7973,6 +8186,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -7984,6 +8198,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -8052,6 +8267,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -8063,6 +8279,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -8224,6 +8441,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -8235,6 +8453,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -8418,6 +8637,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -8429,6 +8649,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -8545,6 +8766,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -8556,6 +8778,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -8688,6 +8911,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -8699,6 +8923,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -8815,6 +9040,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -8826,6 +9052,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -8944,14 +9171,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97b34eb07a693cf4d8045b5d48054b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1147897455
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8966,6 +9185,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -8977,6 +9197,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -9109,6 +9330,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -9120,6 +9342,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -9270,6 +9493,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -9281,6 +9505,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -9333,6 +9558,7 @@ Transform:
   m_Children:
   - {fileID: 623773747}
   - {fileID: 561700528}
+  - {fileID: 469003834}
   m_Father: {fileID: 551959257}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9429,6 +9655,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -9440,6 +9667,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -9558,14 +9786,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97b34eb07a693cf4d8045b5d48054b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1230266706
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9580,6 +9800,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -9591,6 +9812,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -9707,6 +9929,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -9718,6 +9941,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -9972,6 +10196,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -9983,6 +10208,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -10101,14 +10327,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97b34eb07a693cf4d8045b5d48054b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1284631186
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10123,6 +10341,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -10134,6 +10353,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -10250,6 +10470,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -10261,6 +10482,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -10377,6 +10599,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -10388,6 +10611,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -10504,6 +10728,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -10515,6 +10740,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -10647,6 +10873,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -10658,6 +10885,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -10824,6 +11052,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -10835,6 +11064,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -10951,6 +11181,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -10962,6 +11193,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -11112,6 +11344,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -11123,6 +11356,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -11239,6 +11473,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -11250,6 +11485,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -11368,14 +11604,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97b34eb07a693cf4d8045b5d48054b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1405325035
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11390,6 +11618,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -11401,6 +11630,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -11576,6 +11806,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -11587,6 +11818,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -11705,14 +11937,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97b34eb07a693cf4d8045b5d48054b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1488776140
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11727,6 +11951,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -11738,6 +11963,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -11854,6 +12080,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -11865,6 +12092,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -11995,6 +12223,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -12006,6 +12235,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -12136,6 +12366,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -12147,6 +12378,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -12215,6 +12447,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -12226,6 +12459,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -12342,6 +12576,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -12353,6 +12588,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -12469,6 +12705,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -12480,6 +12717,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -12596,6 +12834,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -12607,6 +12846,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -12696,10 +12936,589 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths: []
+  m_ColliderPaths:
+  - m_Collider: {fileID: 1560762539}
+    m_ColliderPaths:
+    - - X: 1889999971
+        Y: -40000000
+      - X: 1889999971
+        Y: 70000000
+      - X: 1800000000
+        Y: 69999971
+      - X: 1799999971
+        Y: -30000000
+      - X: 1300000000
+        Y: -29999971
+      - X: 1299999971
+        Y: -20000000
+      - X: 1290000000
+        Y: -19999971
+      - X: 1289999971
+        Y: -10000000
+      - X: 1280000000
+        Y: -10000029
+      - X: 1279999971
+        Y: -30000000
+      - X: 1230000000
+        Y: -30000029
+      - X: 1230000029
+        Y: -40000000
+    - - X: 299999971
+        Y: -40000000
+      - X: 299999971
+        Y: -20000000
+      - X: 280000000
+        Y: -20000029
+      - X: 279999971
+        Y: -30000000
+      - X: 270000000
+        Y: -29999971
+      - X: 269999971
+        Y: 0
+      - X: 260000000
+        Y: -29
+      - X: 259999971
+        Y: -30000000
+      - X: 250000000
+        Y: -30000029
+      - X: 249999971
+        Y: -30625000
+      - X: 240000000
+        Y: -30624971
+      - X: 239999971
+        Y: -30000000
+      - X: 220000000
+        Y: -30000029
+      - X: 219999971
+        Y: -30625000
+      - X: 210000000
+        Y: -30624971
+      - X: 209999971
+        Y: -30000000
+      - X: 200000000
+        Y: -30000029
+      - X: 199999971
+        Y: -30625000
+      - X: 190000000
+        Y: -30624971
+      - X: 189999971
+        Y: -30000000
+      - X: 170000000
+        Y: -30000029
+      - X: 169999971
+        Y: -30625000
+      - X: 160000000
+        Y: -30624971
+      - X: 159999971
+        Y: -30000000
+      - X: 150000000
+        Y: -29999971
+      - X: 149999971
+        Y: 0
+      - X: 140000000
+        Y: -29
+      - X: 139999971
+        Y: -30000000
+      - X: 130000000
+        Y: -29999971
+      - X: 129999971
+        Y: -10000000
+      - X: 120000000
+        Y: -10000029
+      - X: 119999971
+        Y: -30000000
+      - X: 110000000
+        Y: -29999971
+      - X: 109999971
+        Y: -20000000
+      - X: 100000000
+        Y: -20000029
+      - X: 99999971
+        Y: -30000000
+      - X: -80000000
+        Y: -29999971
+      - X: -80000029
+        Y: 70000000
+      - X: -150000000
+        Y: 69999971
+      - X: -149999971
+        Y: -40000000
+    - - X: 339999971
+        Y: -10000000
+      - X: 340000029
+        Y: 0
+      - X: 350000000
+        Y: 29
+      - X: 349999971
+        Y: 10000000
+      - X: 330000000
+        Y: 9999971
+      - X: 330000029
+        Y: -10000000
+    - - X: 569999971
+        Y: -40000000
+      - X: 569999971
+        Y: 10000000
+      - X: 560000000
+        Y: 9999971
+      - X: 559999971
+        Y: -30000000
+      - X: 550000000
+        Y: -29999971
+      - X: 549999971
+        Y: 0
+      - X: 540000000
+        Y: -29
+      - X: 539999971
+        Y: -30000000
+      - X: 530000000
+        Y: -29999971
+      - X: 529999971
+        Y: -10000000
+      - X: 520000000
+        Y: -10000029
+      - X: 519999971
+        Y: -30000000
+      - X: 510000000
+        Y: -29999971
+      - X: 509999971
+        Y: -20000000
+      - X: 500000000
+        Y: -20000029
+      - X: 500000029
+        Y: -40000000
+    - - X: 1019999971
+        Y: -40000000
+      - X: 1019999971
+        Y: -30000000
+      - X: 970000000
+        Y: -29999971
+      - X: 969999971
+        Y: -10000000
+      - X: 960000000
+        Y: -10000029
+      - X: 959999971
+        Y: -20000000
+      - X: 950000000
+        Y: -20000029
+      - X: 949999971
+        Y: -30000000
+      - X: 840000000
+        Y: -29999971
+      - X: 839999971
+        Y: 10000000
+      - X: 830000000
+        Y: 9999971
+      - X: 829999971
+        Y: -30000000
+      - X: 670000000
+        Y: -29999971
+      - X: 669999971
+        Y: 10000000
+      - X: 660000000
+        Y: 9999971
+      - X: 660000029
+        Y: -40000000
+    - - X: 369999971
+        Y: -10000000
+      - X: 370000029
+        Y: 0
+      - X: 390000000
+        Y: 29
+      - X: 389999971
+        Y: 10000000
+      - X: 360000000
+        Y: 9999971
+      - X: 360000029
+        Y: -10000000
+    - - X: 319999971
+        Y: -10000000
+      - X: 319999971
+        Y: 10000000
+      - X: 300000000
+        Y: 9999971
+      - X: 300000029
+        Y: -10000000
+    - - X: 459999971
+        Y: -10000000
+      - X: 459999971
+        Y: 10000000
+      - X: 440000000
+        Y: 9999971
+      - X: 440000029
+        Y: 0
+      - X: 450000000
+        Y: -29
+      - X: 450000029
+        Y: -10000000
+    - - X: 419999971
+        Y: -10000000
+      - X: 420000029
+        Y: 0
+      - X: 430000000
+        Y: 29
+      - X: 429999971
+        Y: 10000000
+      - X: 400000000
+        Y: 9999971
+      - X: 400000029
+        Y: 0
+      - X: 410000000
+        Y: -29
+      - X: 410000029
+        Y: -10000000
+    - - X: 169999971
+        Y: -10000000
+      - X: 169999971
+        Y: 0
+      - X: 160000000
+        Y: -29
+      - X: 160000029
+        Y: -10000000
+    - - X: 199999971
+        Y: -10000000
+      - X: 199999971
+        Y: 0
+      - X: 190000000
+        Y: -29
+      - X: 190000029
+        Y: -10000000
+    - - X: 219999971
+        Y: -10000000
+      - X: 219999971
+        Y: 0
+      - X: 210000000
+        Y: -29
+      - X: 210000029
+        Y: -10000000
+    - - X: 249999971
+        Y: -10000000
+      - X: 249999971
+        Y: 0
+      - X: 240000000
+        Y: -29
+      - X: 240000029
+        Y: -10000000
+    - - X: 649999971
+        Y: -40000000
+      - X: 649999971
+        Y: 0
+      - X: 640000000
+        Y: -29
+      - X: 640000029
+        Y: -40000000
+    - - X: 629999971
+        Y: -40000000
+      - X: 629999971
+        Y: -10000000
+      - X: 620000000
+        Y: -10000029
+      - X: 620000029
+        Y: -40000000
+    - - X: 449999971
+        Y: -40000000
+      - X: 449999971
+        Y: -30000000
+      - X: 440000000
+        Y: -29999971
+      - X: 439999971
+        Y: -20000000
+      - X: 430000000
+        Y: -20000029
+      - X: 429999971
+        Y: -30000000
+      - X: 420000000
+        Y: -30000029
+      - X: 420000029
+        Y: -40000000
+    - - X: 1179999971
+        Y: -40000000
+      - X: 1179999971
+        Y: -30000000
+      - X: 1130000000
+        Y: -29999971
+      - X: 1129999971
+        Y: -20000000
+      - X: 1120000000
+        Y: -20000029
+      - X: 1119999971
+        Y: -30000000
+      - X: 1070000000
+        Y: -30000029
+      - X: 1070000029
+        Y: -40000000
+    - - X: 609999971
+        Y: -40000000
+      - X: 609999971
+        Y: -20000000
+      - X: 600000000
+        Y: -20000029
+      - X: 600000029
+        Y: -40000000
+    - - X: 479999971
+        Y: -40000000
+      - X: 479999971
+        Y: -20000000
+      - X: 460000000
+        Y: -20000029
+      - X: 460000029
+        Y: -40000000
+    - - X: 409999971
+        Y: -40000000
+      - X: 409999971
+        Y: -30000000
+      - X: 400000000
+        Y: -29999971
+      - X: 399999971
+        Y: -20000000
+      - X: 390000000
+        Y: -20000029
+      - X: 389999971
+        Y: -30000000
+      - X: 370000000
+        Y: -30000029
+      - X: 370000029
+        Y: -40000000
+    - - X: 359999971
+        Y: -40000000
+      - X: 359999971
+        Y: -20000000
+      - X: 350000000
+        Y: -20000029
+      - X: 349999971
+        Y: -30000000
+      - X: 340000000
+        Y: -30000029
+      - X: 340000029
+        Y: -40000000
+    - - X: 329999971
+        Y: -40000000
+      - X: 329999971
+        Y: -20000000
+      - X: 320000000
+        Y: -20000029
+      - X: 320000029
+        Y: -40000000
+    - - X: 1219999971
+        Y: -40000000
+      - X: 1219999971
+        Y: -30000000
+      - X: 1190000000
+        Y: -30000029
+      - X: 1190000029
+        Y: -40000000
+    - - X: 1059999971
+        Y: -40000000
+      - X: 1059999971
+        Y: -30000000
+      - X: 1030000000
+        Y: -30000029
+      - X: 1030000029
+        Y: -40000000
+    - - X: 589999971
+        Y: -40000000
+      - X: 589999971
+        Y: -30000000
+      - X: 580000000
+        Y: -30000029
+      - X: 580000029
+        Y: -40000000
   m_CompositePaths:
-    m_Paths: []
+    m_Paths:
+    - - {x: 189, y: -4}
+      - {x: 189, y: 7}
+      - {x: 180, y: 6.9999943}
+      - {x: 180, y: -3}
+      - {x: 130, y: -2.9999943}
+      - {x: 130, y: -2}
+      - {x: 129, y: -1.9999943}
+      - {x: 129, y: -1}
+      - {x: 128, y: -1.0000058}
+      - {x: 128, y: -3}
+      - {x: 123, y: -3.0000057}
+      - {x: 123, y: -4}
+    - - {x: 29.999994, y: -4}
+      - {x: 29.999994, y: -2}
+      - {x: 28, y: -2.0000057}
+      - {x: 27.999994, y: -3}
+      - {x: 27, y: -2.9999943}
+      - {x: 26.999994, y: 0}
+      - {x: 26, y: -0.0000058}
+      - {x: 25.999994, y: -3}
+      - {x: 25, y: -3.0000057}
+      - {x: 24.999994, y: -3.0625}
+      - {x: 24, y: -3.0624943}
+      - {x: 23.999994, y: -3}
+      - {x: 22, y: -3.0000057}
+      - {x: 21.999994, y: -3.0625}
+      - {x: 21, y: -3.0624943}
+      - {x: 20.999994, y: -3}
+      - {x: 20, y: -3.0000057}
+      - {x: 19.999994, y: -3.0625}
+      - {x: 19, y: -3.0624943}
+      - {x: 18.999994, y: -3}
+      - {x: 17, y: -3.0000057}
+      - {x: 16.999994, y: -3.0625}
+      - {x: 16, y: -3.0624943}
+      - {x: 15.999993, y: -3}
+      - {x: 15, y: -2.9999943}
+      - {x: 14.999993, y: 0}
+      - {x: 14, y: -0.0000058}
+      - {x: 13.999993, y: -3}
+      - {x: 13, y: -2.9999943}
+      - {x: 12.999994, y: -1}
+      - {x: 12, y: -1.0000058}
+      - {x: 11.999994, y: -3}
+      - {x: 11, y: -2.9999943}
+      - {x: 10.999994, y: -2}
+      - {x: 10, y: -2.0000057}
+      - {x: 9.999994, y: -3}
+      - {x: -8, y: -2.9999943}
+      - {x: -8.000006, y: 7}
+      - {x: -15, y: 6.9999943}
+      - {x: -14.999993, y: -4}
+    - - {x: 101.99999, y: -4}
+      - {x: 101.99999, y: -3}
+      - {x: 97, y: -2.9999943}
+      - {x: 96.99999, y: -1}
+      - {x: 96, y: -1.0000058}
+      - {x: 95.99999, y: -2}
+      - {x: 95, y: -2.0000057}
+      - {x: 94.99999, y: -3}
+      - {x: 84, y: -2.9999943}
+      - {x: 83.99999, y: 1}
+      - {x: 83, y: 0.9999942}
+      - {x: 82.99999, y: -3}
+      - {x: 67, y: -2.9999943}
+      - {x: 66.99999, y: 1}
+      - {x: 66, y: 0.9999942}
+      - {x: 66.00001, y: -4}
+    - - {x: 33.999992, y: -1}
+      - {x: 34.000008, y: 0}
+      - {x: 35, y: 0.0000058}
+      - {x: 34.999992, y: 1}
+      - {x: 33, y: 0.9999942}
+      - {x: 33.000008, y: -1}
+    - - {x: 31.999994, y: -1}
+      - {x: 31.999994, y: 1}
+      - {x: 30, y: 0.9999942}
+      - {x: 30.000008, y: -1}
+    - - {x: 36.999992, y: -1}
+      - {x: 37.000008, y: 0}
+      - {x: 39, y: 0.0000058}
+      - {x: 38.999992, y: 1}
+      - {x: 36, y: 0.9999942}
+      - {x: 36.000008, y: -1}
+    - - {x: 56.999992, y: -4}
+      - {x: 56.999992, y: 1}
+      - {x: 56, y: 0.9999942}
+      - {x: 55.999992, y: -3}
+      - {x: 55, y: -2.9999943}
+      - {x: 54.999992, y: 0}
+      - {x: 54, y: -0.0000058}
+      - {x: 53.999992, y: -3}
+      - {x: 53, y: -2.9999943}
+      - {x: 52.999992, y: -1}
+      - {x: 52, y: -1.0000058}
+      - {x: 51.999992, y: -3}
+      - {x: 51, y: -2.9999943}
+      - {x: 50.999992, y: -2}
+      - {x: 50, y: -2.0000057}
+      - {x: 50.000008, y: -4}
+    - - {x: 41.999992, y: -1}
+      - {x: 42.000008, y: 0}
+      - {x: 43, y: 0.0000058}
+      - {x: 42.999992, y: 1}
+      - {x: 40, y: 0.9999942}
+      - {x: 40.000008, y: 0}
+      - {x: 41, y: -0.0000058}
+      - {x: 41.000008, y: -1}
+    - - {x: 45.999992, y: -1}
+      - {x: 45.999992, y: 1}
+      - {x: 44, y: 0.9999942}
+      - {x: 44.000008, y: 0}
+      - {x: 45, y: -0.0000058}
+      - {x: 45.000008, y: -1}
+    - - {x: 16.999994, y: -1}
+      - {x: 16.999994, y: 0}
+      - {x: 16, y: -0.0000058}
+      - {x: 16.000006, y: -1}
+    - - {x: 64.99999, y: -4}
+      - {x: 64.99999, y: 0}
+      - {x: 64, y: -0.0000058}
+      - {x: 64.00001, y: -4}
+    - - {x: 24.999994, y: -1}
+      - {x: 24.999994, y: 0}
+      - {x: 24, y: -0.0000058}
+      - {x: 24.000008, y: -1}
+    - - {x: 21.999994, y: -1}
+      - {x: 21.999994, y: 0}
+      - {x: 21, y: -0.0000058}
+      - {x: 21.000006, y: -1}
+    - - {x: 19.999994, y: -1}
+      - {x: 19.999994, y: 0}
+      - {x: 19, y: -0.0000058}
+      - {x: 19.000006, y: -1}
+    - - {x: 62.999996, y: -4}
+      - {x: 62.999996, y: -1}
+      - {x: 62, y: -1.0000058}
+      - {x: 62.000008, y: -4}
+    - - {x: 35.999992, y: -4}
+      - {x: 35.999992, y: -2}
+      - {x: 35, y: -2.0000057}
+      - {x: 34.999992, y: -3}
+      - {x: 34, y: -3.0000057}
+      - {x: 34.000008, y: -4}
+    - - {x: 40.999992, y: -4}
+      - {x: 40.999992, y: -3}
+      - {x: 40, y: -2.9999943}
+      - {x: 39.999992, y: -2}
+      - {x: 39, y: -2.0000057}
+      - {x: 38.999992, y: -3}
+      - {x: 37, y: -3.0000057}
+      - {x: 37.000008, y: -4}
+    - - {x: 44.999992, y: -4}
+      - {x: 44.999992, y: -3}
+      - {x: 44, y: -2.9999943}
+      - {x: 43.999992, y: -2}
+      - {x: 43, y: -2.0000057}
+      - {x: 42.999992, y: -3}
+      - {x: 42, y: -3.0000057}
+      - {x: 42.000008, y: -4}
+    - - {x: 47.999992, y: -4}
+      - {x: 47.999992, y: -2}
+      - {x: 46, y: -2.0000057}
+      - {x: 46.000008, y: -4}
+    - - {x: 60.999996, y: -4}
+      - {x: 60.999996, y: -2}
+      - {x: 60, y: -2.0000057}
+      - {x: 60.000008, y: -4}
+    - - {x: 118, y: -4}
+      - {x: 118, y: -3}
+      - {x: 113, y: -2.9999943}
+      - {x: 113, y: -2}
+      - {x: 112, y: -2.0000057}
+      - {x: 112, y: -3}
+      - {x: 107, y: -3.0000057}
+      - {x: 107.00001, y: -4}
+    - - {x: 32.999992, y: -4}
+      - {x: 32.999992, y: -2}
+      - {x: 32, y: -2.0000057}
+      - {x: 32.000008, y: -4}
+    - - {x: 122, y: -4}
+      - {x: 122, y: -3}
+      - {x: 119, y: -3.0000057}
+      - {x: 119, y: -4}
+    - - {x: 105.99999, y: -4}
+      - {x: 105.99999, y: -3}
+      - {x: 103, y: -3.0000057}
+      - {x: 103.00001, y: -4}
+    - - {x: 58.999996, y: -4}
+      - {x: 58.999996, y: -3}
+      - {x: 58, y: -3.0000057}
+      - {x: 58.000008, y: -4}
   m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.000005
 --- !u!50 &1560762535
 Rigidbody2D:
   serializedVersion: 4
@@ -12733,8 +13552,10 @@ TilemapCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!483693784 &1560762540
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -12749,6 +13570,7 @@ TilemapRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -12760,6 +13582,7 @@ TilemapRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -13302,15 +14125,6 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 49, y: -4, z: 0}
-    second:
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
   - first: {x: 50, y: -4, z: 0}
     second:
       m_TileIndex: 3
@@ -13365,7 +14179,16 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 57, y: -4, z: 0}
+  - first: {x: 56, y: -4, z: 0}
+    second:
+      m_TileIndex: 2
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 58, y: -4, z: 0}
     second:
       m_TileIndex: 3
       m_TileSpriteIndex: 3
@@ -13374,7 +14197,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 59, y: -4, z: 0}
+  - first: {x: 60, y: -4, z: 0}
     second:
       m_TileIndex: 3
       m_TileSpriteIndex: 3
@@ -13383,7 +14206,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 61, y: -4, z: 0}
+  - first: {x: 62, y: -4, z: 0}
     second:
       m_TileIndex: 3
       m_TileSpriteIndex: 3
@@ -13392,16 +14215,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 63, y: -4, z: 0}
-    second:
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 65, y: -4, z: 0}
+  - first: {x: 64, y: -4, z: 0}
     second:
       m_TileIndex: 3
       m_TileSpriteIndex: 3
@@ -14580,15 +15394,6 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 27, y: -3, z: 0}
-    second:
-      m_TileIndex: 2
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
   - first: {x: 28, y: -3, z: 0}
     second:
       m_TileIndex: 2
@@ -14661,7 +15466,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 49, y: -3, z: 0}
+  - first: {x: 50, y: -3, z: 0}
     second:
       m_TileIndex: 2
       m_TileSpriteIndex: 1
@@ -14670,7 +15475,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 51, y: -3, z: 0}
+  - first: {x: 52, y: -3, z: 0}
     second:
       m_TileIndex: 2
       m_TileSpriteIndex: 1
@@ -14679,7 +15484,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 53, y: -3, z: 0}
+  - first: {x: 54, y: -3, z: 0}
     second:
       m_TileIndex: 2
       m_TileSpriteIndex: 1
@@ -14688,7 +15493,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 55, y: -3, z: 0}
+  - first: {x: 56, y: -3, z: 0}
     second:
       m_TileIndex: 2
       m_TileSpriteIndex: 1
@@ -14697,7 +15502,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 59, y: -3, z: 0}
+  - first: {x: 60, y: -3, z: 0}
     second:
       m_TileIndex: 2
       m_TileSpriteIndex: 1
@@ -14706,7 +15511,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 61, y: -3, z: 0}
+  - first: {x: 62, y: -3, z: 0}
     second:
       m_TileIndex: 2
       m_TileSpriteIndex: 1
@@ -14715,7 +15520,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 63, y: -3, z: 0}
+  - first: {x: 64, y: -3, z: 0}
     second:
       m_TileIndex: 2
       m_TileSpriteIndex: 1
@@ -14724,7 +15529,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 65, y: -3, z: 0}
+  - first: {x: 66, y: -3, z: 0}
     second:
       m_TileIndex: 2
       m_TileSpriteIndex: 1
@@ -14958,7 +15763,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 51, y: -2, z: 0}
+  - first: {x: 52, y: -2, z: 0}
     second:
       m_TileIndex: 2
       m_TileSpriteIndex: 1
@@ -14967,7 +15772,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 53, y: -2, z: 0}
+  - first: {x: 54, y: -2, z: 0}
     second:
       m_TileIndex: 2
       m_TileSpriteIndex: 1
@@ -14976,7 +15781,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 55, y: -2, z: 0}
+  - first: {x: 56, y: -2, z: 0}
     second:
       m_TileIndex: 2
       m_TileSpriteIndex: 1
@@ -14985,7 +15790,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 61, y: -2, z: 0}
+  - first: {x: 62, y: -2, z: 0}
     second:
       m_TileIndex: 2
       m_TileSpriteIndex: 1
@@ -14994,7 +15799,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 63, y: -2, z: 0}
+  - first: {x: 64, y: -2, z: 0}
     second:
       m_TileIndex: 2
       m_TileSpriteIndex: 1
@@ -15003,7 +15808,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 65, y: -2, z: 0}
+  - first: {x: 66, y: -2, z: 0}
     second:
       m_TileIndex: 2
       m_TileSpriteIndex: 1
@@ -15192,6 +15997,42 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+  - first: {x: 16, y: -1, z: 0}
+    second:
+      m_TileIndex: 2
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 19, y: -1, z: 0}
+    second:
+      m_TileIndex: 2
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 21, y: -1, z: 0}
+    second:
+      m_TileIndex: 2
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 24, y: -1, z: 0}
+    second:
+      m_TileIndex: 2
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: 26, y: -1, z: 0}
     second:
       m_TileIndex: 2
@@ -15255,7 +16096,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 53, y: -1, z: 0}
+  - first: {x: 54, y: -1, z: 0}
     second:
       m_TileIndex: 2
       m_TileSpriteIndex: 1
@@ -15264,7 +16105,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 55, y: -1, z: 0}
+  - first: {x: 56, y: -1, z: 0}
     second:
       m_TileIndex: 2
       m_TileSpriteIndex: 1
@@ -15273,7 +16114,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 63, y: -1, z: 0}
+  - first: {x: 64, y: -1, z: 0}
     second:
       m_TileIndex: 2
       m_TileSpriteIndex: 1
@@ -15282,7 +16123,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 65, y: -1, z: 0}
+  - first: {x: 66, y: -1, z: 0}
     second:
       m_TileIndex: 2
       m_TileSpriteIndex: 1
@@ -15444,87 +16285,6 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 18, y: 0, z: 0}
-    second:
-      m_TileIndex: 2
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 19, y: 0, z: 0}
-    second:
-      m_TileIndex: 2
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 20, y: 0, z: 0}
-    second:
-      m_TileIndex: 2
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 21, y: 0, z: 0}
-    second:
-      m_TileIndex: 2
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 22, y: 0, z: 0}
-    second:
-      m_TileIndex: 2
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 23, y: 0, z: 0}
-    second:
-      m_TileIndex: 2
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 24, y: 0, z: 0}
-    second:
-      m_TileIndex: 2
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 25, y: 0, z: 0}
-    second:
-      m_TileIndex: 2
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 26, y: 0, z: 0}
-    second:
-      m_TileIndex: 2
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
   - first: {x: 30, y: 0, z: 0}
     second:
       m_TileIndex: 2
@@ -15633,7 +16393,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 55, y: 0, z: 0}
+  - first: {x: 56, y: 0, z: 0}
     second:
       m_TileIndex: 2
       m_TileSpriteIndex: 1
@@ -15642,7 +16402,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 65, y: 0, z: 0}
+  - first: {x: 66, y: 0, z: 0}
     second:
       m_TileIndex: 2
       m_TileSpriteIndex: 1
@@ -16611,23 +17371,23 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: fdd626ddcf65d444b95e9a4f93b50353, type: 2}
   - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: ba6500a9567fdc54c87ad74393bea860, type: 2}
-  - m_RefCount: 229
+  - m_RefCount: 224
     m_Data: {fileID: 11400000, guid: a2f6279a68e98d24caf4bd17a1de43dd, type: 2}
-  - m_RefCount: 190
+  - m_RefCount: 188
     m_Data: {fileID: 11400000, guid: b5c061b802630604181d99bc39d2b199, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: 21300014, guid: 379944d01935992448c48f63caeb528d, type: 3}
-  - m_RefCount: 229
+  - m_RefCount: 224
     m_Data: {fileID: 21300002, guid: 379944d01935992448c48f63caeb528d, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 21300004, guid: 379944d01935992448c48f63caeb528d, type: 3}
-  - m_RefCount: 190
+  - m_RefCount: 188
     m_Data: {fileID: 21300000, guid: 379944d01935992448c48f63caeb528d, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 424
+  - m_RefCount: 417
     m_Data:
       e00: 1
       e01: 0
@@ -16646,7 +17406,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 424
+  - m_RefCount: 417
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: 1.7079e-41, g: 1.7079e-41, b: 1.7079e-41, a: 1.7079e-41}
@@ -16768,6 +17528,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -16779,6 +17540,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -16895,6 +17657,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -16906,6 +17669,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -16977,6 +17741,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -16988,6 +17753,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -17163,6 +17929,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -17174,6 +17941,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -17290,6 +18058,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -17301,6 +18070,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -17433,6 +18203,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -17444,6 +18215,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -17568,14 +18340,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97b34eb07a693cf4d8045b5d48054b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1733344697
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17590,6 +18354,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -17601,6 +18366,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -17726,6 +18492,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -17737,6 +18504,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -17853,6 +18621,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -17864,6 +18633,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -17980,6 +18750,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -17991,6 +18762,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -18107,6 +18879,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -18118,6 +18891,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -18236,14 +19010,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97b34eb07a693cf4d8045b5d48054b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1777384502
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18258,6 +19024,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -18269,6 +19036,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -18385,6 +19153,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -18396,6 +19165,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -18512,6 +19282,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -18523,6 +19294,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -18639,6 +19411,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -18650,6 +19423,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -18825,6 +19599,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -18836,6 +19611,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -18954,14 +19730,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97b34eb07a693cf4d8045b5d48054b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1836792052
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18976,6 +19744,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -18987,6 +19756,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -19105,14 +19875,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97b34eb07a693cf4d8045b5d48054b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1844163731
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19127,6 +19889,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -19138,6 +19901,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -19254,6 +20018,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -19265,6 +20030,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -19381,6 +20147,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -19392,6 +20159,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -19524,6 +20292,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -19535,6 +20304,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -19735,6 +20505,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -19746,6 +20517,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -19862,6 +20634,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -19873,6 +20646,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -19989,6 +20763,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -20000,6 +20775,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -20116,6 +20892,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -20127,6 +20904,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -20243,6 +21021,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -20254,6 +21033,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -20322,6 +21102,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -20333,6 +21114,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -20449,6 +21231,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -20460,6 +21243,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -20576,6 +21360,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -20587,6 +21372,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -20703,6 +21489,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -20714,6 +21501,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -20846,6 +21634,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -20857,6 +21646,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -20973,6 +21763,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -20984,6 +21775,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -21100,6 +21892,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -21111,6 +21904,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -21257,6 +22051,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -21268,6 +22063,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -21443,6 +22239,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -21454,6 +22251,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -21570,6 +22368,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -21581,6 +22380,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
