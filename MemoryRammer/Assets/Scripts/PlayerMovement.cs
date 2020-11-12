@@ -275,20 +275,20 @@ public class PlayerMovement : MonoBehaviour
 
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            jumpSoundPitchValue= 1.8f;
+            jumpSoundPitchValue = 1.8f;
             jumpSound.pitch = jumpSoundPitchValue;
-          //  jumpSound.Play();
-          //  jumpSound = GetComponent<AudioSource>();
-                        
+            //  jumpSound.Play();
+            //  jumpSound = GetComponent<AudioSource>();
+
 
         }
         else if (!grounded && !doubleJumped)
         {
 
             rb.velocity = new Vector2(rb.velocity.x, jumpForce * 0.75f);
-            jumpSound.pitch = (jumpSoundPitchValue*1.07f) + 0.17f;
+            jumpSound.pitch = (jumpSoundPitchValue * 1.07f) + 0.17f;
 
-          //  jumpSound.Play();
+            //  jumpSound.Play();
 
             doubleJumped = true;
 
